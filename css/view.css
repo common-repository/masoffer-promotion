@@ -1,0 +1,218 @@
+@font-face {
+  font-family: oswald;
+  src: url("/wp-content/plugins/masoffer-promotion/fonts/VNF-Oswald Regular.ttf");
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("/wp-content/plugins/masoffer-promotion/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/wp-content/plugins/masoffer-promotion/fonts/OpenSans-SemiBold.woff2");
+}
+.mopromo-wrapper * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.mopromo-wrapper {
+  max-width: 100%;
+}
+.mopromo-wrapper * {
+  font-family: "Open Sans Regular";
+}
+.mopromo-wrapper a {
+  text-decoration: none !important;
+  font-family: "Open Sans";
+}
+.mopromo-wrapper .mopromo-title {
+  color: #000000c7;
+  font-size: 19px;
+}
+.mopromo-wrapper .mopromo-title:hover {
+  color: #39b54a;
+}
+@media only screen and (min-width: 576px) {
+  .mopromo-wrapper .promo-row {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+  }
+  .mopromo-wrapper .mopromo-inline-div {
+    display: table-cell;
+  }
+  .mopromo-wrapper .mopromo-col-pre {
+    width: 100px;
+  }
+  .mopromo-wrapper .mopromo-col-oth {
+    margin: 0px auto;
+    width: 175px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .mopromo-wrapper .promo-row {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .mopromo-wrapper .mopromo-inline-div {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .mopromo-wrapper .mopromo-col-oth {
+    width: 175px;
+  }
+  .mopromo-wrapper .mopromo-image {
+    margin: auto;
+  }
+}
+.mopromo-wrapper .mopromo-col-oth .mopromo-get-code {
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  font-family: "Open Sans";
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+  text-align: center;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.mopromo-wrapper .mopromo-image {
+  height: 90px;
+  width: 90px;
+  border: 3px solid #006EC8;
+}
+.mopromo-wrapper .mopromo-image .mopromo-type {
+  background-color: #f0f0f0;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 27px;
+  font-size: 10px;
+  color: #637cf9;
+}
+.mopromo-wrapper .mopromo-image .mopromo-offer-logo {
+  height: 55px;
+  position: relative;
+}
+.mopromo-wrapper .mopromo-image .mopromo-offer-logo img {
+  max-width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.mopromo-wrapper .mopromo-image .mopromo-value {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 27px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #006FC8;
+  margin-top: 8px;
+  font-family: oswald;
+}
+.mopromo-wrapper .mopromo-info {
+  font-size: 16px;
+}
+.mopromo-wrapper .mopromo-info strong {
+  color: #39B54A;
+}
+.mopromo-wrapper .mopromo-expired {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  color: #d41919;
+  margin-bottom: 2px;
+}
+.mopromo-wrapper .mopromo-get-code {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.mopromo-wrapper .mopromo-get-code .mopromo-sub-wrapper {
+  position: absolute;
+  width: 100%;
+  line-height: 0px;
+  top: 0;
+  left: 0px;
+  z-index: 9999;
+  opacity: 1;
+  -webkit-opacity: 1;
+  border-bottom: 42px solid #006EC8;
+  border-right: 20px solid rgba(255, 0, 0, 0);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: translateX(-60px);
+  -moz-transform: translateX(-60px);
+  -ms-transform: translateX(-60px);
+  -o-transform: translateX(-60px);
+  transform: translateX(-60px);
+  transition: 0.3s;
+}
+.mopromo-wrapper .mopromo-get-code .mopromo-sub-wrapper .mopromo-get {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 25px;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  line-height: 39px;
+  transition: 0.3s;
+}
+.mopromo-wrapper .mopromo-get-code:hover .mopromo-sub-wrapper {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  border-right: none;
+}
+.mopromo-wrapper .mopromo-get-code:hover .mopromo-sub-wrapper .mopromo-get {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  left: 0px;
+  color: white !important;
+}
+.mopromo-wrapper .mopromo-get-code .mopromo-ip-code {
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  width: 100%;
+  border: 2px dashed #ddd;
+  font-family: "oswald";
+  font-size: 13px;
+  line-height: 20px;
+}
+.mopromo-wrapper .mopromo-get-promo {
+  line-height: 40px;
+  background-color: #006EC8;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.mopromo-wrapper .mopromo-get-promo:hover {
+  color: white;
+  background: #0094ef;
+}
+
+/*# sourceMappingURL=view.css.map */
